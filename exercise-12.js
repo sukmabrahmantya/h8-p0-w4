@@ -38,7 +38,7 @@ function countProfit(shoppers) {
 
   console.log(temp);
 
-  var result = temp;
+  // var result = temp;
 
   for (var i = 0; i < shoppers.length; i++) {
     for (var j = 0; j < result.length; j++) {
