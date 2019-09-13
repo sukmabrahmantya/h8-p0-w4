@@ -22,7 +22,25 @@ Output yang diharapkan berupa Object Literal dengan format sebagai berikut:
 */
 
 function graduates(students) {
-  // Code disini
+  var result = {};
+
+  for (var i = 0; i < students.length; i++) {
+    if (students[i].score > 75) {
+      result[students[i].class] = [];
+    }
+  }
+
+  for (var j = 0; j < students.length; j++) {
+    if (students[j].score > 75) {
+      var data = {
+        name: students[j].name,
+        score: students[j].score
+      };
+      result[students[j].class].push(data);
+    }
+  }
+
+  return result;
 }
 
 console.log(
@@ -54,6 +72,7 @@ console.log(
 //   foxes: [
 //     { name: 'Dimitri', score: 90 }
 //   ],
+
 //   wolves: [
 //     { name: 'Alexei' , score: 85 },
 //     { name: 'Anastasia', score: 78 }
@@ -103,4 +122,4 @@ console.log(
 //   ]
 // }
 
-console.log(graduates([])); //{}
+// console.log(graduates([])); //{}

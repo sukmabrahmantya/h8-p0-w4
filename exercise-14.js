@@ -1,13 +1,13 @@
-/* Problem
-Diberikan function naikAngkot(listPenumpang) yang akan menerima satu parameter 
-berupa array dua dimensi. Function akan me-return array of object.
+// /* Problem
+// Diberikan function naikAngkot(listPenumpang) yang akan menerima satu parameter
+// berupa array dua dimensi. Function akan me-return array of object.
 
-Diberikan sebuah rute, dari A - F. Penumpang diwajibkan membayar Rp2000 
-setiap melewati satu rute.
+// Diberikan sebuah rute, dari A - F. Penumpang diwajibkan membayar Rp2000
+// setiap melewati satu rute.
 
-Contoh: input: [['Dimitri', 'B', 'F']] 
-output: [{ penumpang: 'Dimitri', naikDari: 'B', tujuan: 'F', bayar: 8000 }]
-*/
+// Contoh: input: [['Dimitri', 'B', 'F']]
+// output: [{ penumpang: 'Dimitri', naikDari: 'B', tujuan: 'F', bayar: 8000 }]
+// */
 
 function naikAngkot(arrPenumpang) {
   rute = ["A", "B", "C", "D", "E", "F"];

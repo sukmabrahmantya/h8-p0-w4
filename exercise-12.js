@@ -36,6 +36,8 @@ function countProfit(shoppers) {
     temp.push(data);
   }
 
+  console.log(temp);
+
   var result = temp;
 
   for (var i = 0; i < shoppers.length; i++) {
@@ -51,12 +53,6 @@ function countProfit(shoppers) {
               result[j].totalProfit += shoppers[i].amount * listBarang[j][1];
               // console.log(result[j]);
             }
-            // } else if (shoppers[i].product == "Baju Zoro") {
-            //   result[j].totalProfit += shoppers[i].amount * 500000;
-            // } else if (shoppers[i].product == "Sweater Uniklooh") {
-            //   result[j].totalProfit += shoppers[i].amount * 175000;
-            // } else {
-            //   result[j].totalProfit = 0;
           }
         }
       }

@@ -15,8 +15,22 @@ function highestScore(students) {
   var data = {};
 
   for (var i = 0; i < students.length; i++) {
-    console.log(students);
+    for (var j = i + 1; j < students.length; j++) {
+      if (
+        students[i].score > students[j].score &&
+        students[i].class == students[j].class
+      ) {
+        var temp = students[i];
+        students[i] = students[j];
+        students[j] = temp;
+      }
+      // console.log(temp);
+    }
   }
+
+  // for (var i = 0; i < students.length; i++) {
+  //   // console.log(students);
+  // }
 
   for (var i = 0; i < students.length; i++) {
     // console.log(students[i].class);
@@ -25,7 +39,7 @@ function highestScore(students) {
       score: students[i].score
     };
   }
-  //   console.log(data);
+  return data;
 }
 
 // TEST CASE
